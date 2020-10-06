@@ -1,3 +1,5 @@
+alias config='/usr/bin/git --git-dir=$HOME/Dokumenty/dotfiles/ --work-tree=$HOME'
+
 function config_push
 	config add $argv
 	config commit -m "Updated config for $argv"
@@ -14,3 +16,8 @@ function dotfile
 	nvim $argv
 	config_push $argv
 end
+
+funcsave config_push
+funcsave edit
+funcsave dotfile
+funcsave config

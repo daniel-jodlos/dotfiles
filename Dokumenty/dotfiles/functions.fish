@@ -3,13 +3,16 @@ alias config='/usr/bin/git --git-dir=$HOME/Dokumenty/dotfiles/ --work-tree=$HOME
 function config_push
 	config add $argv
 	config commit -m "Updated config for $argv"
-	config push > /dev/null -q
+	nohup timeout 30 config push > /dev/null -q &
 end
 
 function edit
-	set path $HOME/(config ls-tree -r master --name-only | fzf)
+	set prev (pwd)
+	cd $HOME
+	set path (config ls-tree -r master --name-only | fzf)
 	nvim $path
 	config_push $path
+	cd $prev
 end
 
 function dotfile

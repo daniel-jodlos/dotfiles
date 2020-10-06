@@ -3,7 +3,7 @@ alias config='/usr/bin/git --git-dir=$HOME/Dokumenty/dotfiles/ --work-tree=$HOME
 function config_push
 	config add $argv
 	config commit -m "Updated config for $argv"
-	(nohup timeout 30 config push -q &) > /dev/null
+	nohup timeout 30 config push -q 2>&1 &
 end
 
 function edit

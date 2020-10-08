@@ -18,6 +18,11 @@ super + @space
 alt + F1
     rofi_run -r
 
+# obisidian
+super + o
+    obsidian &
+
+
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd

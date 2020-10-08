@@ -23,6 +23,15 @@ super + o
     obsidian &
 
 
+#vimwiki
+super + v
+    terminator -x 'nvim $HOME/vimwiki/index.wiki'
+
+#htop
+super + h
+    terminator -x 'htop'
+
+
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd

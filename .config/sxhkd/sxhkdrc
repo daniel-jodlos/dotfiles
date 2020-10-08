@@ -22,6 +22,8 @@ alt + F1
 super + o
     obsidian &
 
+#remnote
+   firefox --new-window http://www.remnote.io
 
 # make sxhkd reload its configuration files:
 super + shift + r

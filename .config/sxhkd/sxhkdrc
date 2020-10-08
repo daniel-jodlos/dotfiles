@@ -24,12 +24,12 @@ super + o
 
 
 #vimwiki
-super + v
-    terminator -x 'nvim $HOME/vimwiki/index.wiki'
+super + v 
+    terminator -x "nvim $HOME/vimwiki/index.wiki" &
 
 #htop
 super + h
-    terminator -x 'htop'
+    terminator -x 'htop' &
 
 
 # make sxhkd reload its configuration files:

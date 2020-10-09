@@ -6,6 +6,10 @@ super + w
 super + Return
     exo-open --launch TerminalEmulator
 
+# code
+super + c
+    code &
+
 # file manager
 super + f
     exo-open --launch FileManager

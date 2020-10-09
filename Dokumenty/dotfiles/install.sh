@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Syy
-sudo pacman -S git github-cli wmname fish gcc make linux-headers
+sudo pacman -S git github-cli wmname fish gcc make linux-headers qutebrowser
 
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git

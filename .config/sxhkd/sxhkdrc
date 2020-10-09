@@ -31,11 +31,11 @@ super + r
 
 #vimwiki
 super + v
-    terminator -x "nvim /home/daniel/vimwiki/index.wiki" &
+    xterm -e "nvim /home/daniel/vimwiki/index.wiki" &
 
 #htop
 super + p
-    terminator -x 'htop' &
+    xterm -e 'htop' &
 
 
 # make sxhkd reload its configuration files:

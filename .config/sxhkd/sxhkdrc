@@ -18,17 +18,16 @@ super + @space
 alt + F1
     rofi_run -r
 
-# obisidian
-super + o
-    obsidian &
-
+# git recorder
+super + r
+    peek &
 
 #vimwiki
-super + v 
-    terminator -x "nvim $HOME/vimwiki/index.wiki" &
+super + v
+    terminator -x "nvim /home/daniel/vimwiki/index.wiki" &
 
 #htop
-super + h
+super + p
     terminator -x 'htop' &
 
 

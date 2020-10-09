@@ -1,6 +1,9 @@
 # web browser
-super + w
+super + shift + w
     exo-open --launch WebBrowser
+
+super + w
+    qutebrowser &
 
 # terminal emulator
 super + Return

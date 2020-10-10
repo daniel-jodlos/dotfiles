@@ -54,6 +54,10 @@ super + {_,shift + }q
 super + shift + m
     bspc desktop -l next
 
+# move window around
+super + ctrl + {h,j,k,l}
+      bspc window -s {left, down, up, right}
+
 # if the current node is automatic, send it to the last manual, otherwise pull the last leaf
 super + y
     bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused

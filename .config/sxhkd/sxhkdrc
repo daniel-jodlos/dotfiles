@@ -29,8 +29,12 @@ alt + F1
 super + r
     peek &
 
-#vimwiki
+#orgmode
 super + v
+    emacs ~/org/index.org
+
+#vimwiki
+super + shift + v
     xterm -e "nvim /home/daniel/vimwiki/index.wiki" &
 
 #htop

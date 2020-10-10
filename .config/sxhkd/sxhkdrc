@@ -11,7 +11,7 @@ super + Return
 
 # code
 super + c
-    code &
+    emacs &
 
 # file manager
 super + f

@@ -1,0 +1,15 @@
+window.dynamic_title: true
+
+font:
+  normal:
+    family: monospace
+  bold:
+    family: monospace
+  italic:
+    family: monospace
+
+colors:
+  background: '#1d1f21'
+  foreground: '#c5c8c6'
+
+background_opacity: .95

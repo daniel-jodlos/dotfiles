@@ -44,7 +44,7 @@ super + p
 
 # whatsapp web
 super + ctrl + w
-    firefox --new-window web.whatsapp.com
+   firefox --new-window web.whatsapp.com
 
 #remnote
 super + n
@@ -67,9 +67,6 @@ super + {_,shift + }q
 super + shift + m
     bspc desktop -l next
 
-# move window around
-super + ctrl + {h,j,k,l}
-      bspc window -s {left, down, up, right}
 
 # if the current node is automatic, send it to the last manual, otherwise pull the last leaf
 super + y

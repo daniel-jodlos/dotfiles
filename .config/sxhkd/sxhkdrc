@@ -42,6 +42,15 @@ super + p
     xterm -e 'htop' &
 
 
+# whatsapp web
+super + ctrl + w
+    firefox --new-window web.whatsapp.com
+
+#remnote
+super + n
+    firefox --new-window remnote.io
+
+
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd

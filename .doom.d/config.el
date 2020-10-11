@@ -37,7 +37,7 @@
 
 
 ;; Here are some additional functions/macros that could help you
-configure Doom:
+;;configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
 ;; - `use-package!' for configuring packages
@@ -55,3 +55,4 @@ configure Doom:
 ;; they are implemented.
 
 (doom/set-frame-opacity 98)
+(setq doom-font (font-spec :family "Fira Code" :size 13))

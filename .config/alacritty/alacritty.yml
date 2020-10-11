@@ -2,11 +2,12 @@ window.dynamic_title: true
 
 font:
   normal:
-    family: monospace
+    family: Hack
   bold:
-    family: monospace
+    family: Hack
   italic:
-    family: monospace
+    family: Hack
+  ligratures: true
 
 colors:
   background: '#1d1f21'

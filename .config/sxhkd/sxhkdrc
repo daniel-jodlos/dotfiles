@@ -25,7 +25,7 @@ super + @space
 alt + F1
     rofi_run -r
 
-# git recorder
+# gif recorder
 super + r
     peek &
 

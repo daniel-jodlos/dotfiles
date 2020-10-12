@@ -20,7 +20,12 @@ function dotfile
 	config add $argv
 end
 
+functions dotfiles_update
+    config checkout -f
+end
+
 funcsave edit
 funcsave dotfile
 funcsave config
 funcsave config_all
+funcsave dotfiles_update

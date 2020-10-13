@@ -13,6 +13,9 @@ xsetroot -cursor_name left_ptr
 # key bindings
 sxhkd &
 
+## start emacs server
+systemctl --user start emacs
+
 # panel
 tint2 &
 

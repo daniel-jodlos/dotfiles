@@ -31,7 +31,7 @@ super + r
 
 #orgmode
 super + v
-    emacsclient -c ~/org/index.org
+    emacsclient -c ~/Dropbox/org/index.org
 
 #vimwiki
 super + shift + v

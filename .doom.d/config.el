@@ -54,5 +54,8 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(doom/set-frame-opacity 98)
+(defun make-transparent (&optional frame) (doom/set-frame-opacity 95))
 (setq doom-font (font-spec :family "Fira Code" :size 13))
+(add-hook 'server-after-make-frame-hook 'make-transparent)
+(add-hook 'after-make-frame-functions 'make-transparent)
+(make-transparent)

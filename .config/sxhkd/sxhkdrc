@@ -31,7 +31,7 @@ super + r
 
 #orgmode
 super + v
-    emacsclient -c ~/Dropbox/org/index.org
+    emacsclient -c ~/Nextcloud/org/index.org
 
 #vimwiki
 super + shift + v
@@ -54,6 +54,9 @@ super + n
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd
+
+# reload bspwm
+    bspc -r
 
 # quit bspwm normally
 super + x

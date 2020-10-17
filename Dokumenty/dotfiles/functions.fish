@@ -10,17 +10,17 @@ function edit
 	set prev (pwd)
 	cd $HOME
 	set path (config ls-tree -r master --name-only | fzf)
-	emacs -nw $path
+	nvim $path
 	config add $path
 	cd $prev
 end
 
 function dotfile
-	emacs -nw $argv
+	nvim $argv
 	config add $argv
 end
 
-functions dotfiles_update
+function dotfiles_update
     config checkout -f
 end
 

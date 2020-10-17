@@ -17,6 +17,10 @@ super + c
 super + f
     exo-open --launch FileManager
 
+# hide polybar
+super + {_, shift} + i
+    polybar-msg cmd {hide, show}; {bspc config top_padding 0, _}
+
 # program launcher
 super + @space
     rofi_run -r

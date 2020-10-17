@@ -18,7 +18,7 @@ sxhkd &
 systemctl --user start emacs
 
 # panel
-tint2 &
+polybar example &
 
 # Set some bsp specific stuff
 bspc monitor -d I II III IV V VI VII VIII IX X

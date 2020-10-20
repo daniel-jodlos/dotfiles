@@ -18,6 +18,7 @@ sxhkd &
 systemctl --user start emacs
 
 # panel
+pkill polybar
 polybar example &
 
 # Set some bsp specific stuff
@@ -25,13 +26,20 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config window_gap 4
 bspc config border_width 2
-bspc config top_padding 0
-bspc config top_monocle_padding 0
+bspc config top_padding -5
+bspc config left_padding 3
+bspc config rigth padding 3
+#bspc config top_monocle_padding 0
 
 bspc config split_ratio 0.62
 bspc config borderless_monocle true
 bspc config gapless_monocle true
-bspc config single_monocle true
+#bspc config single_monocle true
+#bspc config top_monocle_padding 30
+#bspc config bottom_monocle_padding 0
+#bspc config right_monocle_padding 0
+#bspc confgi left_monocle_padding 0
+
 
 bspc config pointer_modifier mod1
 bspc config pointer_action1 move

@@ -29,6 +29,12 @@ super + @space
 alt + F1
     rofi_run -r
 
+alt + F5
+    pavucontrol
+
+XF86Tools
+    spotify
+
 # gif recorder
 super + r
     peek &
@@ -36,6 +42,7 @@ super + r
 #orgmode
 super + v
     emacsclient -c ~/Nextcloud/org/index.org
+
 
 #vimwiki
 super + shift + v

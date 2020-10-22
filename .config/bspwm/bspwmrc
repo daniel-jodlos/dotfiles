@@ -3,6 +3,7 @@
 # autostart
 nitrogen --restore &
 blueman-applet &
+picom --np-fading-openclose &
 nextcloud &
 
 ## make sure that Java apps can reparent and show anything

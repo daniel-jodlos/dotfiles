@@ -27,7 +27,7 @@ super + @space
 
 # program launcher
 alt + F1
-    rofi_run -r
+    rofi -show run
 
 alt + F5
     pavucontrol
@@ -71,7 +71,7 @@ super + shift + r
 
 # quit bspwm normally
 super + x
-    rofi_run -l
+    killall bspwm
 
 # close and kill
 super + {_,shift + }q

@@ -11,11 +11,15 @@ super + Return
 
 # code
 super + c
-    emacs &
+    emacsclient -c &
 
 # file manager
 super + f
     exo-open --launch FileManager
+
+# workman
+alt + l
+    bash /home/danielj/Dokumenty/dotfiles/workman.bash
 
 # hide/show polybar
 super + {_, shift} + i

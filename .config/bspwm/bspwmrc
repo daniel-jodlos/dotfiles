@@ -4,7 +4,6 @@
 nitrogen --restore &
 blueman-applet &
 picom --np-fading-openclose &
-nextcloud &
 
 ## make sure that Java apps can reparent and show anything
 wmname LG3D
@@ -22,14 +21,16 @@ systemctl --user start emacs
 pkill polybar
 polybar example &
 
+nm-applet & # network applet
+
 # Set some bsp specific stuff
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config window_gap 4
+bspc config window_gap 0
 bspc config border_width 2
 bspc config top_padding -5
-bspc config left_padding 3
-bspc config rigth padding 3
+bspc config left_padding 0
+bspc config rigth padding 0
 #bspc config top_monocle_padding 0
 
 bspc config split_ratio 0.62

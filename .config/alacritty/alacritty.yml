@@ -1,4 +1,5 @@
 window.dynamic_title: true
+window.padding: 10
 
 font:
   normal:

@@ -19,7 +19,7 @@ super + f
 
 # workman
 alt + l
-    bash /home/danielj/Dokumenty/dotfiles/workman.bash
+    bash ~/Dokumenty/dotfiles/workman.bash
 
 # hide/show polybar
 super + {_, shift} + i

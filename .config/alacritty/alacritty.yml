@@ -9,5 +9,6 @@ font:
   italic:
     family: Hack
   ligratures: true
+  size: 8
 
 background_opacity: 0.95

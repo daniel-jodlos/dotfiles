@@ -1,0 +1,14 @@
+swipe:
+  3:
+    left:
+      command: 'bspc desktop -f next.local'
+    right:
+      command: 'bspc desktop -f prev.local'
+
+threshold:
+  swipe: 0.5
+  pinch: 0.2
+
+interval:
+  swipe: 0.2
+  pinch: 0.2

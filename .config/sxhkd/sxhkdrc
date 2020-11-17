@@ -11,7 +11,7 @@ super + Return
 
 # code
 super + c
-    emacsclient -c &
+    code
 
 # file manager
 super + f
@@ -20,6 +20,7 @@ super + f
 # workman
 alt + l
     bash /home/danielj/Dokumenty/dotfiles/workman.bash
+
 
 # hide/show polybar
 super + {_, shift} + i
@@ -50,11 +51,11 @@ super + v
 
 #vimwiki
 super + shift + v
-    xterm -e "nvim /home/daniel/vimwiki/index.wiki" &
+    alacritty -e "nvim /home/daniel/vimwiki/index.wiki" &
 
 #htop
 super + p
-    xterm -e 'htop' &
+    alacritty -e 'htop' &
 
 
 # whatsapp web
@@ -124,6 +125,9 @@ super + {_,shift + }c
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
+    bspc desktop -f {prev,next}.local
+
+KP_{{4, Left}, {5, Right}}
     bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop

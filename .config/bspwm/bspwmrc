@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# monitors
+xrandr --output DisplayPort-0 --primary --mode 1920x1080 --rotate normal --output HDMI-A-0 --mode 1920x1080 --rotate normal --left-of DisplayPort-0
+
 # autostart
 nitrogen --restore &
 blueman-applet &
@@ -17,14 +20,17 @@ sxhkd &
 ## start emacs server
 systemctl --user start emacs
 
-# panel
-pkill polybar
-polybar example &
-
-nm-applet & # network applet
 
 # Set some bsp specific stuff
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor DisplayPort-0 -d 1 2 3 4 5 6 7 8 9
+bspc monitor HDMI-A-0 -d 1 2 3 4 5 6 7 8 9
+
+# panel
+pkill polybar
+polybar top &
+polybar top2 &
+
+nm-applet & # network applet
 
 bspc config window_gap 0
 bspc config border_width 2

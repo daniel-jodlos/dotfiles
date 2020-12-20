@@ -6,3 +6,5 @@ if [ $(setxkbmap -query | grep variant | wc -l) -eq '0' ]; then
 else
     setxkbmap pl && xset -r 66
 fi
+
+~/.config/autostart/./remap_profile.sh

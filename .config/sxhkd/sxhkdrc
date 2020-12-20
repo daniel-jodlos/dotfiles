@@ -72,6 +72,7 @@ super + shift + r
     pkill -USR1 -x sxhkd
 
 # reload bspwm
+super + shift + x
     bspc -r
 
 # quit bspwm normally
@@ -127,8 +128,8 @@ super + {_,shift + }c
 super + bracket{left,right}
     bspc desktop -f {prev,next}.local
 
-KP_{{4, Left}, {5, Right}}
-    bspc desktop -f {prev,next}.local
+#KP_{{4, Left}, {5, Right}}
+#    bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -142,7 +143,8 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-    bspc {desktop -f,node -d} '^{1-9,10}'
+    bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
 #super + {_, shift +} KP_{End, Down, Next, Left, Begin, Right, Home, Up,Prior}
 #    bspc {desktop -f, node -d} {I, II, III, IV, V, VI, VII, VIII, IX, X}
 

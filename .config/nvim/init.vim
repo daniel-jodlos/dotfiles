@@ -35,14 +35,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'timonv/vim-cargo'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'posva/vim-vue'
-Plug 'nicwest/vim-workman'
 Plug 'Raimondi/delimitMate'
-Plug 'vimwiki/vimwiki'
+Plug 'edkolev/erlang-motions.vim'
+Plug 'git@github.com:vim-erlang/vim-erlang-skeletons.git'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -353,7 +352,31 @@ noremap <leader>gs :Gstatus<CR>
 "Remaps esc to work in terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-let g:workman_normal_workman = 0
-let g:workman_insert_workman = 0
-let g:workman_normal_qwerty = 1
-let g:workman_insert_qwerty = 0
+colorscheme gruvbox
+set background=dark
+
+" Erlang snippets configuration
+let g:erl_author="Daniel Jodłoś"
+
+" just a workman remap
+nnoremap l o
+nnoremap o l
+nnoremap L O
+nnoremap O L
+nnoremap j n
+nnoremap n j
+nnoremap J N
+nnoremap N J
+nnoremap gn gj
+nnoremap gj gn
+nnoremap k e
+nnoremap e k
+nnoremap K E
+nnoremap E <nop>
+nnoremap gk ge
+nnoremap ge gk
+nnoremap h y
+onoremap h y
+nnoremap y h
+nnoremap H Y
+nnoremap Y H

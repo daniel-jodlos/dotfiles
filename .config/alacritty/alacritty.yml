@@ -3,12 +3,12 @@ window.padding: 10
 
 font:
   normal:
-    family: Hack
+    family: Fira Code
   bold:
-    family: Hack
+    family: Fira Code
   italic:
-    family: Hack
+    family: Fira Code
   ligratures: true
-  size: 11
+  size: 11.3
 
 background_opacity: 0.95

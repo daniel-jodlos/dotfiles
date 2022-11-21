@@ -174,6 +174,11 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+set $dr "DP-3-1-1"
+set $dl "DP-3-1-8"
+
+
+
 # reload the configuration file
 bindsym $mod+Shift+m reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -210,11 +215,11 @@ bindsym $mod+w mode "resize"
 
 mode "launch" {
 	bindsym t mode"default"; exec pcmanfm
-	bindsym v mode"default"; exec qutebrowser
-	bindsym Shift+v mode"default"; exec firefox
+	bindsym Shift+v mode"default"; exec qutebrowser
+	bindsym v mode"default"; exec google-chrome-stable
 
 	bindsym d mode "default"; exec urxvt -e nvim ~/vimwiki/index.wiki
-	bindsym s mode "default"; exec spotify
+	bindsym s mode "default"; exec firefox open.spotify.com
 
 	bindsym exec mode "default"; dmenu
 

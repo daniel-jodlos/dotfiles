@@ -7,7 +7,6 @@ Plug 'lervag/wiki.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ggandor/leap.nvim'
 Plug 'tpope/vim-repeat'
-Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " lightline
@@ -27,12 +26,15 @@ Plug 'ThePrimeagen/harpoon'
 " Treesitter - better syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'elixir-editors/vim-elixir'
+
 " Telescope, as a replacement for crtl-p
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 call plug#end()
 
 " relative line numbers
+syntax on
 set relativenumber
 
 " Goyo and lime integration
@@ -50,12 +52,6 @@ let mapleader = " "
 
 " leap plugin configuration
 lua require('leap').add_default_mappings()
-
-" ctrl-space configuration
-set nocompatible
-set hidden
-set encoding=utf-8
-let g:CtrlSpaceDefaultMappingKey = "<C-p>"
 
 " lightline theme
 let g:lightline = {'colorscheme': 'tokyonight'}
@@ -151,10 +147,11 @@ nmap <leader>vs :vs<cr>
 
 
 " telescope
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
 
 " workman remap
 nnoremap l o

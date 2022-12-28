@@ -34,8 +34,10 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id sleep 1s && cbatticon
 exec --no-startup-id picom
-exec nitrogen --restore
+exec --no-startup-id nitrogen --restore
 exec sleep 1s && setxkbmap pl --variant workman -option caps:swapescape
+
+exec --no-startup-id light -N 10
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -243,8 +245,8 @@ bindsym $mod+bracketright exec playerctl next
 bindsym $mod+backslash exec playerctl play-pause
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
 # gaps
 gaps outer -2

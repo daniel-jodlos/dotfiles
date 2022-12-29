@@ -44,6 +44,8 @@ exec --no-startup-id light -N 10
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym $mod+greater exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym $mod+less exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -223,16 +225,16 @@ mode "launch" {
 	bindsym v mode"default"; exec google-chrome-stable
 
 	bindsym d mode "default"; exec urxvt -e nvim ~/vimwiki/index.wiki
-	bindsym s mode "default"; exec firefox open.spotify.com
+	bindsym s mode "default"; exec spotify || exec firefox open.spotify.com
 
 	bindsym exec mode "default"; dmenu
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+semicolon mode "launch"
-bindsym $mod+Shift+l exec i3lock -c 000000
+bindsym $mod+Shift+l exec i3lock -c 000000 & sleep 5 && xset dpms force off
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status

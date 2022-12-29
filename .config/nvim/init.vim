@@ -31,6 +31,8 @@ Plug 'elixir-editors/vim-elixir'
 " Telescope, as a replacement for crtl-p
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 " relative line numbers
@@ -41,9 +43,9 @@ set relativenumber
 set smartindent
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
+set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
@@ -151,7 +153,7 @@ nmap <leader>hh <cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>
 " window navigation
 nmap <leader>wy <C-w>h<cr>
 nmap <leader>wo <C-w>l<cr>
-nmap <leader>wy <C-w>j<cr>
+nmap <leader>wn <C-w>j<cr>
 nmap <leader>we <C-w>k<cr>
 nmap <leader>bd :bd<cr>
 nmap <leader>vs :vs<cr>
@@ -162,6 +164,16 @@ nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" goyo config
+let g:goyo_width=120
+let g:goyo_linenr=1
+
+" nerd tree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 lua << EOF
 require('nvim-treesitter.configs').setup {

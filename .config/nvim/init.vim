@@ -40,7 +40,6 @@ syntax on
 set relativenumber
 
 " indents
-set smartindent
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=2
@@ -48,7 +47,6 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
-
 
 " Goyo and lime integration
 autocmd! User GoyoEnter Limelight

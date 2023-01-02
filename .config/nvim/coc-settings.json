@@ -1,3 +1,9 @@
 {
-  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "languageserver": {
+      "erlang": {
+          "command": "erlang_ls",
+          "filetypes": ["erlang"]
+      }
+  }
 }

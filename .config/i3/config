@@ -221,7 +221,7 @@ bindsym $mod+w mode "resize"
 
 mode "launch" {
 	bindsym t mode"default"; exec pcmanfm
-	bindsym Shift+v mode"default"; exec qutebrowser
+	bindsym Shift+v mode"default"; exec firefox
 	bindsym v mode"default"; exec google-chrome-stable
 
 	bindsym d mode "default"; exec urxvt -e nvim ~/vimwiki/index.wiki

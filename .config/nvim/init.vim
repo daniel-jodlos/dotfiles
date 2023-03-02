@@ -53,7 +53,7 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 " colorscheme
-colorscheme tokyonight-storm
+colorscheme gruvbox
 
 " remap escape to work as expected in terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -65,7 +65,7 @@ let mapleader = " "
 lua require('leap').add_default_mappings()
 
 " lightline theme
-let g:lightline = {'colorscheme': 'tokyonight'}
+let g:lightline = {'colorscheme': 'gruvbox'}
 
 " wiki vim configuration
 let g:wiki_root = '~/vimwiki'
